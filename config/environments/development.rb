@@ -27,3 +27,13 @@ Lobsters::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 end
+
+class << Rails.application
+  def domain
+    "localhost:3000"
+  end
+
+  def name
+    "Example News"
+  end
+end

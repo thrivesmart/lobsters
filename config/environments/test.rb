@@ -34,3 +34,14 @@ Lobsters::Application.configure do
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
 end
+
+
+class << Rails.application
+  def domain
+    "localhost"
+  end
+
+  def name
+    "Example News"
+  end
+end

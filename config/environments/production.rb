@@ -78,3 +78,15 @@ Lobsters::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 end
+
+
+class << Rails.application
+  def domain
+    "pefi.herokuapp.com"
+  end
+
+  def name
+    "Example News"
+  end
+end
+
